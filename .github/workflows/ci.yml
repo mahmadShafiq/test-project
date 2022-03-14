@@ -4,8 +4,6 @@
 name: Node.js CI
 
 on:
-  push:
-    branches: [ master ]
   pull_request:
     branches: [ master ]
 
@@ -22,6 +20,6 @@ jobs:
         node-version: '14'
         cache: 'npm'
         cache-dependency-path: app/package-lock.json
-    - run: npm node.js
-    - run: npm run build --if-present
+    - run: npm install
+    - run: npm run build 
     - run: npm test
