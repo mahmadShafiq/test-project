@@ -19,7 +19,7 @@ jobs:
     - name: Setting Up Node
       uses: actions/setup-node@v2
       with:
-        node-version: latest
+        node-version: '14'
         cache: 'npm'
     - run: npm node.js
     - run: npm run build --if-present
