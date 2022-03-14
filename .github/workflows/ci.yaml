@@ -23,5 +23,5 @@ jobs:
         cache: 'npm'
         cache-dependency-path: app/package-lock.json
     - run: npm install
-    - run: npm run build 
+    - run: node server
     - run: npm test
