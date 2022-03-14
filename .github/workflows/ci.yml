@@ -23,6 +23,6 @@ jobs:
         node-version: 10
         cache: 'npm'
         cache-dependency-path: app/package-lock.json
-    - run: npm ci
+    - run: npm install
     - run: npm run build 
     - run: npm test
